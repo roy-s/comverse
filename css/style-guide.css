@@ -1,0 +1,92 @@
+/* Style guide related. Not components */
+
+body {
+	background-color: rgb(150,150,150);
+	font-size: 18px;
+}
+	
+.sgr {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	color: black;
+	font-weight: normal;
+}
+
+main {
+	padding: 20px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif
+}
+
+#page-title {
+	text-decoration: underline;
+	font-size: 2em;
+	font-weight: bold;
+	word-spacing: normal;
+	color: black;
+}
+
+.style-category > h2  {
+	text-decoration: underline;
+}
+
+.component-title {
+	
+}
+
+.horizontal-line {
+	width: 100%;
+	border-bottom: 3px solid black;
+	margin: 50px 0;
+}
+
+figure {
+	margin: 50px 0 0 20px;
+}
+
+figcaption {
+	margin: 0 0 20px -10px;
+	font-size: 1.2em;
+}
+
+.color-sample {
+	width: 100px;
+	height: 50px;
+	display: inline-block;
+	margin: 0 50px 20px 0;
+}
+
+.smaller-font {
+	font-size: 0.8em;
+}
+
+.add-background {
+	background-size: cover;
+	padding: 20px;
+	display: inline-block;
+}
+
+.header-back {
+	background-image: url("../img/basic_background.jpg");
+}
+
+.news-back {
+	background-image: url("../img/news-and-events-bg.jpg");
+}
+
+.services-back {
+	background-color: rgb(51, 153, 204);
+}
+
+.white-back {
+	background-color: rgb(255, 255, 255);	b
+}
+
+.images .service-icon,
+.images .company-logo 
+{
+	margin: 20px 30px;
+}
+
+.comverse-logo {
+	display: inline-block;
+	background-color: white;
+}
