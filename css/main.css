@@ -43,7 +43,7 @@ footer
 }
 
 .section-wrapper {
-	width: 1000px;
+	width: 960px;
 	margin: 0 auto;
 	overflow: hidden;
 	text-align: center ;
@@ -54,12 +54,8 @@ nav {
 }
 
 .slideshow {
-	/*background-image: url('../img/slide-bg-complexity.jpg'); */
-	background-image: url('../img/slide-bg-complexity_cut.jpg'); 
+	background: url('../img/slide-bg-complexity.jpg') no-repeat center center/cover fixed;
 	background-repeat: no-repeat;
-	background-size: cover;
-	/*background-position: -200px -200px;*/
-	/* background-origin: 200px 200px; */
 }
 
 .comverse-services {
@@ -76,8 +72,9 @@ nav {
 	background-color: rgb(236, 236, 236);
 }
 
-.success-stories h2 {
-	color: rgb(86, 86, 86) !important;
+footer {
+	background-image: url('../img/footer-background-darker.png');
+	padding: 0;
 }
 
 body {
@@ -97,19 +94,93 @@ body {
 .services-list {
 	list-style: none;
 	padding: 0;
-	display: inline-block;
 	margin: auto;
 }
 
 .services-list li {
 	float: left;
 	margin: 15px 30px 0 0;
-	/*margin-right: 30px;
-	margin-top: 15px;*/
 }
 
 .comverse-services .larger-button {
 	margin: 40px auto 30px auto;
+}
+
+.success-stories .larger-button {
+	margin: 30px auto 15px auto;
+}
+
+.center-wrap {
+	display: inline-block;
+	margin: 0 auto;
+	padding: 0;
+}
+
+/* Success Story layout */
+.success-story,
+.company-logo 
+{
+	float: left;
+}
+
+.left-group,
+.middle-group,
+.right-group 
+{
+	float: left;
+}
+
+.left-group,
+.middle-group
+{
+	width: 350px;
+	margin-right: 8px;
+}
+
+.right-group {
+	width: 232px;
+}
+
+.left-group .success-story,
+.right-group .success-story 
+{
+	margin-bottom: 8px;
+}
+
+.left-group > img:not(:first-of-type),
+.right-group > img:not(:first-of-type) 
+{
+	margin-left: 8px;
+}
+
+.middle-group .success-story {
+	margin-top: 8px;
+}
+
+.middle-group > img:not(:first-of-type) {
+	margin-left: 8px;
+}
+/* ----- */
+
+footer .section-wrapper {
+	padding: 0 10px;
+}
+
+.footer-list-wrapper {
+	float: left;
+}
+
+.footer-list-wrapper:not(:last-of-type) {
+	margin-right: 50px;
+}
+
+.footer-list-wrapper:last-of-type {
+	margin-right: 0;
+}
+
+.footer-left {
+	width: 670px;
+	float: left;
 }
 /* --------------------------------   End of Layout   ------------------------------- */
 
@@ -160,6 +231,10 @@ strong {
 .sub-section-title {
 	font-size: 35px;
 	text-transform: uppercase;
+}
+
+.success-stories h2 {
+	color: rgb(86, 86, 86) !important;
 }
 
 /* --------------------------------   End of Headings   ----------------------------- */
@@ -219,9 +294,12 @@ strong {
 	box-shadow: 0px 1px 4px 0px rgba(162, 162, 162, 0.004);
 	width: 300px;
 	height: 174px;
-	margin-right: 32px;
+	margin-right: 30px;
 }
 
+.header-box:last-of-type {
+	margin-right: 0;
+}
 /* the following property is defined seperately in order to avoid ruining the 
    layout of the style-sheet. */
 header .header-box {
@@ -229,7 +307,7 @@ header .header-box {
 }
 
 .header-box > p {
-	font-size: 24px;
+	font-size: 23px;
 	line-height: 1.25;
 	text-align: left;
 	padding: 15px 15px 0 13px;
@@ -370,7 +448,7 @@ header .header-box {
 }
 
 .date-box-wrapper:not(:last-of-type) {
-	margin-right: 30px;
+	margin-right: 25px;
 }
 
 /* ------ */
@@ -397,15 +475,28 @@ header .header-box {
 	margin: 0;
 	padding: 0;
 }
+
+.middle-group .customer-quote p {
+	font-size: 15px;
+}
 /* ------  */
 
 /* Success Stories - Person */
 .success-story {
 	padding: 15px 10px 15px 15px;
-	display: inline-block;
 	background-color: white;
+	width: 349px;
+	height: 204px;
+	overflow: hidden;
 }
 
+.no-face {
+	width: 230px;
+}
+
+.no-face  .customer-quote p {
+	width: 200px;
+}
 .success-story .customer-quote {
 	margin-left: 5px;
 }
@@ -419,7 +510,7 @@ header .header-box {
 .person-name,
 .person-title{
 	margin: 5px 0 0 0;
-	font-weight: bold;
+	font-weight: 600;
 	font-size: 14px;
 }
 
@@ -480,6 +571,7 @@ header .header-box {
 	width: 65%;
 	margin: 0 10px;
 	text-transform: capitalize;
+	font-size: 16px;
 }
 
 .footer-separator {
@@ -497,6 +589,33 @@ header .header-box {
 .footer-box ul li {
 	display: inline;
 	margin-right: 10px;
+}
+/* ----- */
+
+/* footer final line (contains copyright statement & privacy policy) */
+
+.footer-final {
+	clear: both;
+	margin-top: 100px;
+}
+
+.footer-final a {
+	text-decoration: none;
+}
+
+.footer-final,
+.footer-final a
+{
+	font-size: 12px;
+	font-family: "Arial";
+	color: rgb(130, 130, 130);
+}
+
+.footer-final .separator {
+	margin: 0 8px;
+	border-right: 1px solid rgb(130, 130, 130);
+	line-height: 0.8;
+
 }
 /* ----- */
 
@@ -608,18 +727,9 @@ header .header-box {
 
 .main-navigation li:not(:first-of-type) {
 	background: url('../img/search_line_devider.png') left center no-repeat;
-	/*background-position: -20px 0;*/
 }
 /* ----- */
 
-/*.main-navigation li:not(:last-of-type) :after{
-	background: url('../img/search_line_devider.png');
-	width: 1px;
-	height: 20px;
-	display: block;
-	position: absolute;
-}*/
-/* ----- */
 
 /* language selector */
 #language {
@@ -675,7 +785,7 @@ header .header-box {
 /* footer list */
 .footer-list-title {
 	margin-bottom: 5px;
-	font-size: 15px;
+	font-size: 14px;
 	font-family: "Arial";
 	color: rgb(238, 238, 238);
 	line-height: 2.033;
@@ -687,11 +797,12 @@ header .header-box {
 	list-style: none;
 	margin: 0;
 	padding: 0;
+	text-align: left;
 }
 
 .footer-list a {
 	text-decoration: none;
-	font-size: 13px;
+	font-size: 12px;
 	font-family: "Arial";
 	color: rgb(238, 238, 238);
 	line-height: 1.833;
