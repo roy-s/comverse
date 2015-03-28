@@ -300,8 +300,8 @@ nav .section-wrapper {
 
 .secondary-navigation .search-box {
 	position: absolute;
-	bottom: 0;
-	margin-left: 7px;
+	bottom: 2px;
+	right: 0;
 }
 /* ----- */
 
@@ -794,6 +794,8 @@ header .header-box {
 
 /* search box */
 .search-box {
+	width: 153px;
+	height: 25px;
 	border-style: solid;
 	border-width: 1px;
 	border-color: rgb(210, 210, 210);
@@ -801,34 +803,42 @@ header .header-box {
 	background-color: rgb(255, 255, 255);
 	box-shadow: 0.5px 0.866px 1px 0px rgba(231, 231, 231, 0.75);
 	display: inline-block;
-	margin: 2px 0;
 	padding: 0;
-
 }
+
+.search-box form {
+	height: 25px;
+	position: relative;
+}
+
 
 .search-box input,
 .search-box button
 {
+	height: 23px;
 	margin: 0;
 	padding: 0;
 	border: none;
 	background-color: white;
-	height: 20px;
+	position: absolute;
 }
 
 .search-box input {
-	/*float: left;*/
-	height: 20;
+	/* line-height: 20px; */
 	margin: 0;
 	margin-left: 3px;
 	width: 115px;
+	outline: none;
+
 }
 
 .search-box button {
-	/*float: right;*/
-	margin: 3px 3px 0 0;	
+	margin: 0 3px 0 0;	
 	padding-left: 5px;
 	background: url('../img/search_line_devider.png') left center no-repeat;
+	right: 0;
+	cursor: pointer; 
+	cursor: hand;
 }
 /* ----- */
 
