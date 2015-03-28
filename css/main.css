@@ -285,9 +285,12 @@ nav .section-wrapper {
 
 .secondary-navigation select {
 	left: 0;
+	height: 18px;
 }
 
 .secondary-navigation a {
+	height: 18px;
+	line-height: 18px;
 	right: 0;
 	font-size: 13px;
 	font-family: "Arial";
@@ -297,12 +300,17 @@ nav .section-wrapper {
 	background: url('../img/search_line_devider.png') left center no-repeat;
 }
 
+.secondary-navigation a:hover {
+	text-decoration: underline;
+	color: #3097cb;
+}
 
 .secondary-navigation .search-box {
 	position: absolute;
 	bottom: 2px;
 	right: 0;
 }
+
 /* ----- */
 
 /* header box and contained elements */
@@ -841,6 +849,7 @@ header .header-box {
 	cursor: hand;
 }
 /* ----- */
+
 
 /* footer list */
 .footer-list-title {
