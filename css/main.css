@@ -60,6 +60,10 @@ nav {
 	background-repeat: no-repeat;
 }
 
+.slideshow .center-wrap {
+	margin-top: 150px;
+}
+
 .comverse-services {
 	background: url('../img/services-back.png') repeat scroll 0 0,radial-gradient(ellipse at center,#59bedb 0%,#39c 100%);;
 }
@@ -84,13 +88,14 @@ body {
 	padding: 0;
 }
 
-/*nav .section-wrapper {
-	padding-top: 15px;
-	padding-bottom: 10px;
-}*/
-
 .slide-navigation {
-	margin: 15px 0 60px 0;
+	position: absolute;
+	top: 230px;
+}
+
+.header-button {
+	position: absolute;
+	top: 250px;
 }
 
 .services-list {
@@ -680,11 +685,17 @@ header .header-box {
 	height: 11px;
 	margin: 5px;
 	float: left;
+	cursor: pointer; 
+	cursor: hand;
 } 
 
 .current {
 	background-color: rgb(51, 153, 204);
 } 
+
+.current:hover {
+	background-color: rgb(130, 130, 130);
+}
 
 .available {
 	background-color: rgb(255, 255, 255);
@@ -832,12 +843,10 @@ header .header-box {
 }
 
 .search-box input {
-	/* line-height: 20px; */
 	margin: 0;
 	margin-left: 3px;
 	width: 115px;
 	outline: none;
-	padding: 0;
 }
 
 .search-box button {
