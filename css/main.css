@@ -297,6 +297,9 @@ strong {
 	margin-right: 30px;
 }
 
+.header-box:hover {
+	opacity: 1;
+}
 .header-box:last-of-type {
 	margin-right: 0;
 }
