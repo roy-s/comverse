@@ -352,6 +352,7 @@ header .header-box {
 	margin-top: 15px;
 	font-weight: 400;
 	text-align: center;
+	font-size: 16px;
 }
 
 .services-list li:last-of-type {
