@@ -99,7 +99,7 @@ body {
 
 .services-list li {
 	float: left;
-	margin: 15px 30px 0 0;
+	margin: 15px 0 0 0;
 }
 
 .comverse-services .larger-button {
@@ -331,6 +331,11 @@ header .header-box {
 /* ------- */
 
 /* Comverse Services */
+.services-list a {
+	padding-right: 32px;
+	display: inline-block;
+	text-decoration: none;	
+}
 
 .services .img-wrapper {
 	height: 90px;
@@ -355,8 +360,8 @@ header .header-box {
 	font-size: 16px;
 }
 
-.services-list li:last-of-type {
-	margin-right: 0;
+.services-list li:last-of-type a {
+	padding-right: 0;
 }
 /* ----- */
 
