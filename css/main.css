@@ -123,50 +123,244 @@ body {
 	padding: 0;
 }
 
+
 /* Success Story layout */
-.success-story,
-.company-logo 
+.success-list {
+	position: relative;
+	display: block;
+	width: 948px;
+	height: 310px;
+	margin: 0 auto;
+	padding: 0;
+	
+}
+
+.success-list li,
+.success-list ul,
+.success-list a
 {
-	float: left;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+/*.success-list ul {
+	display: inline-block;
+}*/
+
+.success-list a {
+	position: relative;
+	overflow: hidden;
+	display: block;
+}
+
+.story-link {
+	width: 349px;
+	height: 204px;
+}
+
+.story-link-no-face {
+	width: 230px;
+	height: 204px;
+}
+
+/* to remove whitespaces between list elements */
+.success-list,
+.success-list ul 
+{
+	font-size: 0;
 }
 
 .left-group,
 .middle-group,
 .right-group 
 {
-	float: left;
+	position: absolute;
+	top: 0;
+	height: 310px;
 }
 
+.success-list ul li {
+	position: absolute;
+}
+
+/* dimensions */
 .left-group,
 .middle-group
 {
-	width: 350px;
-	margin-right: 8px;
+	width: 349px;
 }
 
 .right-group {
-	width: 232px;
+	width: 230px;
 }
 
-.left-group .success-story,
-.right-group .success-story 
+.logo-link {
+	width: 111px;
+	height: 98px;
+}
+
+/* positioning - groups */
+.left-group {
+	left: 0;
+}
+
+.middle-group {
+	left: 358px;
+}
+
+.right-group {
+	left: 716px;
+}
+
+
+/* positioning - inner */
+/* left group */
+.left-group ul li:nth-child(1){
+	top: 0;
+	left: 0;
+}
+
+.left-group ul li:nth-child(2){
+	bottom: 0;
+	left: 0;
+}
+
+.left-group ul li:nth-child(3){
+	bottom: 0;
+	left: 119px;
+}
+
+.left-group ul li:nth-child(4){
+	bottom: 0;
+	right: 0;
+}
+
+/* middle group */
+.middle-group ul li:nth-child(1){
+	top: 0;
+	left: 0;
+}
+
+.middle-group ul li:nth-child(2){
+	top: 0;
+	left: 119px;
+}
+
+.middle-group ul li:nth-child(3){
+	top: 0;
+	right: 0;
+}
+
+.middle-group ul li:nth-child(4){
+	bottom: 0;
+	left: 0;
+}
+
+
+/* right group */
+.right-group ul li:nth-child(1){
+	top: 0;
+	left: 0;
+}
+
+.right-group ul li:nth-child(2){
+	bottom: 0;
+	left: 0;
+}
+
+.right-group ul li:nth-child(3){
+	bottom: 0;
+	right: 0;
+}
+/* end of success list positioning */
+
+/* success stories hover elements */
+.full-quote-big,
+.full-quote-small 
 {
-	margin-bottom: 8px;
+	position: absolute;
+	height: 204px;
+	background-color: #3aa6db;
 }
 
-.left-group > img:not(:first-of-type),
-.right-group > img:not(:first-of-type) 
+.full-quote-big p,
+.full-quote-small p 
 {
-	margin-left: 8px;
+	background: url("../img/quote-blue.png") no-repeat 30px 15px ;
+	font-size: 19px;
+	color: rgb(256, 256, 256);
+	line-height: 1.6;
+	font-weight: 400;
+	margin: 0;
+	padding: 15px;
+	padding-left: 35px;
+	text-indent: 40px;
 }
 
-.middle-group .success-story {
-	margin-top: 8px;
+.full-quote-big {
+	width: 349px;
 }
 
-.middle-group > img:not(:first-of-type) {
-	margin-left: 8px;
+.full-quote-small {
+	width: 230px;
 }
+
+.sergey, .adale, .ravi {
+	top: 0;
+	left: 0;
+}
+
+.generic-logo {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+
+
+
+/* too set the hover elements to be initially hidden */
+.success-story {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 20;
+}
+
+.logo-link > img:first-child {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 20;
+}
+
+.full-quote-big,
+.full-quote-small,
+.generic-logo
+{
+	z-index: 10;
+}
+
+/* hover effect */
+a[class|=story-link]:hover > div:first-of-type {
+	transform: translateY(-204px);
+	transition: transform 0.5s ease-out;
+}
+
+a[class|=story-link] > div:first-of-type {
+	transition: transform 0.4s;
+}
+
+a[class|=logo-link]:hover > img:first-of-type {
+	transform: translateY(-111px);
+	transition: transform 0.5s ease-out;
+}
+
+a[class|=logo-link] > img:first-of-type {
+	transition: transform 0.4s;
+}
+
 /* ----- */
 
 footer .section-wrapper {
@@ -579,8 +773,14 @@ header .header-box {
 }
 
 .success-story .company-logo {
-	float: right;
+	position: absolute;
+	bottom: 19px;
+	right: 15px;
 	margin-top: 12px;
+}
+
+.middle-group .success-story .company-logo {
+	bottom: 10px;
 }
 /* ----- */
 
