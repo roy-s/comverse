@@ -142,10 +142,6 @@ body {
 	list-style: none;
 }
 
-/*.success-list ul {
-	display: inline-block;
-}*/
-
 .success-list a {
 	position: relative;
 	overflow: hidden;
@@ -316,8 +312,6 @@ body {
 }
 
 
-
-
 /* too set the hover elements to be initially hidden */
 .success-story {
 	position: absolute;
@@ -361,26 +355,47 @@ a[class|=logo-link] > img:first-of-type {
 
 /* ----- */
 
+/* footer positioning */
 footer .section-wrapper {
 	padding: 0 10px;
 }
 
-.footer-list-wrapper {
-	float: left;
-}
-
-.footer-list-wrapper:not(:last-of-type) {
-	margin-right: 50px;
-}
-
-.footer-list-wrapper:last-of-type {
-	margin-right: 0;
-}
-
-.footer-left {
+.footer-links {
+	display: block;
+	list-style: none;
 	width: 670px;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	position: absolute;
+	left: 10px;
+	top: 0;
+}
+
+.footer-links > li {
+	display: inline-block;
+	margin: 12px 0 0 0;
+	padding: 0;
+}
+
+.footer-list {
 	float: left;
 }
+
+.footer-links >li:not(:first-of-type) {
+	margin-left: 70px;
+}
+
+.footer-final {
+	position: absolute;
+	left: 10px;
+	bottom: 10px;
+}
+
+.footer-box {
+	float: right;
+}
+/* ----- */
 /* --------------------------------   End of Layout   ------------------------------- */
 
 
@@ -1084,6 +1099,8 @@ header .header-box {
 	line-height: 1.833;
 	text-align: left;
 }
+
+
 /* ----- */
 
 /* subscribe */
