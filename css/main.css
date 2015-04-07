@@ -396,6 +396,10 @@ footer .section-wrapper {
 	float: left;
 }
 
+.footer-list li {
+	height: 24px;
+}
+
 .footer-links >li:not(:first-of-type) {
 	margin-left: 70px;
 }
