@@ -1275,6 +1275,10 @@ header .header-box {
 	text-align: left;
 }
 
+.footer-list a:hover {
+	text-decoration: underline;
+}
+
 
 /* ----- */
 
