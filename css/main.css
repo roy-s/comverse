@@ -1266,6 +1266,7 @@ header .header-box {
 	display: inline-block;
 	border-radius: 2px;
 	background-color: white;
+	height: 28px;
 }
 
 .subscribe input{ 
@@ -1277,6 +1278,8 @@ header .header-box {
 	font-size: 12px;
 	font-family: "Arial";
 	color: rgb(67, 66, 66);
+	border: none;
+	outline: none;
 }
 
 .subscribe button {
