@@ -1262,7 +1262,6 @@ header .header-box {
 
 /* subscribe */
 .subscribe {
-	/*border: 1px solid black;*/
 	display: inline-block;
 	border-radius: 2px;
 	background-color: white;
@@ -1271,11 +1270,13 @@ header .header-box {
 
 .subscribe form {
 	height: 28px;
+	width: 235px;
+	position: relative
 }
 
 .subscribe input{ 
 	width: 162px;
-	height: 26px;
+	height: 28px;
 	border-radius: 2px;
 	border: none;
 	padding: 1px 0 1px 10px;
@@ -1284,6 +1285,9 @@ header .header-box {
 	color: rgb(67, 66, 66);
 	border: none;
 	outline: none;
+	position: absolute;
+	left: 0;
+	top: 0;
 }
 
 .subscribe button {
@@ -1296,6 +1300,9 @@ header .header-box {
 	font-family: "Arial";
 	color: rgb(255, 255, 255);
 	text-transform: uppercase;
+	position: absolute;
+	right: 0;
+	top: 0;
 }
 /* -----------------------------   End of Menus/Forms   ----------------------------- */
 
