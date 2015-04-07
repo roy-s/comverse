@@ -1135,6 +1135,7 @@ header .header-box {
 .left-submenu li,
 .right-submenu li
 {
+	height: 24px;
 	line-height: 1.5;
 }
 
