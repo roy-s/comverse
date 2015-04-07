@@ -1105,12 +1105,12 @@ header .header-box {
 }
 
 .submenu .submenu-links {
-	width: 66%;
+	width: 63%;
 	height: 100%;
 } 
 
 .submenu .submenu-image {
-	width: 32%;
+	width: 35%;
 	height: 100%;
 	background: url("../img/line_divider_video.png") no-repeat 0% 60%;
 }
