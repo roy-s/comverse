@@ -632,12 +632,17 @@ header .header-box {
 
 /* date box */
 .date-box {
+	display: block;
 	background-color: rgba(255, 255, 255, 0.4);
 	box-shadow: 0px 1px 4px 0px rgba(162, 162, 162, 0.004);
 	width: 296px;
 	height: 119px;
 	border-radius: 2px;
 	padding: 10px 4px 10px 10px;
+}
+
+.date-box:hover {
+	background-color: rgba(255, 255, 255, 0.8);
 }
 
 .date-box > div, 
@@ -690,7 +695,17 @@ header .header-box {
 }
 
 .date-box-follow {
-	padding-top: 15px;
+	padding: 15px 10px 0 32px;
+	display: inline-block;
+	text-decoration: none;
+}
+
+.date-box-follow.all-news {
+	background: url("../img/eventListIconNews.png") no-repeat left 73%;
+}
+
+.date-box-follow.all-events {
+	background: url("../img/eventListIconEvents.png") no-repeat left 65%;
 }
 
 .date-box-follow span {
@@ -702,6 +717,18 @@ header .header-box {
 	font-weight: 100;
 	position: relative;
 	top: -5px;
+}
+
+.date-box-follow:hover span {
+	color: black;
+}
+
+.date-box-follow.all-news:hover {
+	background: url("../img/eventListIconNews_hover.png") no-repeat left 73%;
+}
+
+.date-box-follow.all-events:hover {
+	background: url("../img/eventListIconEvents_hover.png") no-repeat left 65%;
 }
 
 .title-space h3 {
