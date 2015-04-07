@@ -1269,6 +1269,10 @@ header .header-box {
 	height: 28px;
 }
 
+.subscribe form {
+	height: 28px;
+}
+
 .subscribe input{ 
 	width: 162px;
 	height: 28px;
