@@ -892,11 +892,29 @@ header .header-box {
 	list-style: none;
 	margin: 45px 0 0 0;
 	padding: 0;	
+	font-size: 0;
 }
 
 .footer-box ul li {
-	display: inline;
+	display: inline-block;
+	width: 25px;
 	margin-right: 10px;
+	position: relative;
+}
+
+.footer-box ul li a {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 20;
+}
+
+.footer-box ul li a.on-hover {
+	z-index: 10;
+}
+
+.footer-box ul li:hover a.on-hover {
+	z-index: 30;
 }
 /* ----- */
 
